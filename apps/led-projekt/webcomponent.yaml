@@ -9,9 +9,13 @@ spec:
   navigation:
     - element: led-treatment-app    # element, ktorý bude vložený na stránku
                                     # pri navigácii na zoznam čakajúcich
+      attributes:
+      - name: api-base
+        value: http://localhost:5000/api
+
       path: led-treatment      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
       title: Zoznam Liečebný plán      # názov mikro aplikácie
-      details: Správa liečebných plánov pacientov, - xlednickym
+      details: Správa liečebných plánov pacientov - xlednickym
   preload: false                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
   proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti
                                     # musí byť táto hodnota nastavená na true
