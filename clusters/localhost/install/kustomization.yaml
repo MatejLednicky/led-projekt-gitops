@@ -10,3 +10,10 @@ commonLabels:
 
 resources:
 - ../../../apps/led-projekt
+- ../../../apps/led-projekt-webapi
+
+components:
+ - https://github.com/MatejLednicky/led-projekt-webapi//deployments/kustomize/components/mongodb
+
+patches:
+ - path: patches/led-projekt-webapi.service.yaml

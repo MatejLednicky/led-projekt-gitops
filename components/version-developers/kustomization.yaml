@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1alpha1
+kind: Component
+images:
+- name: matejled/led-projekt-webapi
+  newName: matejled/led-projekt-webapi 
+  newTag: main
+- name: matejled/led-projekt
+  newName: matejled/led-projekt
+  newTag: main
+- name: milung/ufe-controller
+  newName: milung/ufe-controller
+  newTag: 1.7.3
