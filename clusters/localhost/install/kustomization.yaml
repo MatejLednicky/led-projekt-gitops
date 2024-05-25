@@ -11,6 +11,7 @@ commonLabels:
 resources:
 - ../../../apps/led-projekt
 - ../../../apps/led-projekt-webapi
+- ../../../apps/mongo-express
 
 components:
  - https://github.com/MatejLednicky/led-projekt-webapi//deployments/kustomize/components/mongodb
